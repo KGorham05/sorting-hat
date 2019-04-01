@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        <hr>
+
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required="">
+
+        <h4>Link to Any Photo Image! (Required)</h4>
+        <input type="text" id="photo" class="form-control" required="">
+
+        <hr>
+        <!-- I could put my questions, answers, and values into an array, then write a loop to create each of these questions dynamically -->
+        <h3><strong>Question 1</strong></h3>
+        <h4>You would rather sit home with a good book then go to an art gallery</h4>
+    
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="questionOne" id="q1" value="huffl" checked>
+            <label class="form-check-label" for="q1">
+                Strongly Disagree
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios1" value="huffl"
+                checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Disagree
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios2" value="raven">
+            <label class="form-check-label" for="exampleRadios2">
+                Agree
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="questionOne" id="exampleRadios2" value="raven">
+            <label class="form-check-label" for="exampleRadios2">
+                Strongly Agree
+            </label>
+        </div>
+
+        
+
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>A polar bear is chasing you and a friend when your friend falls! What do you do?</h4>
+
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="slyth">You're the reason your friend fell!</option>
+            <option value="slyth">Run!</option>
+            <option value="gryff">Try to help them!</option>
+            <option value="gryff">Raise your arms, make noise, and try to get the bear's attention!</option>
+        </select>
+
+
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>If you could make a potion that would guarantee you one thing, what would it be?</h4>
+
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="huffl">Love</option>
+            <option value="gryff">Glory</option>
+            <option value="raven">Wisdom</option>
+            <option value="slyth">Power</option>
+        </select>
+
+
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>Four goblets are placed before you. Which do you drink?</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="huffl">A dark potion, the color of the night sky with fumes that give you strange visions
+            </option>
+            <option value="slyth">A silvery, gilttering potion that looks as though it's made of ground diamonds
+            </option>
+            <option value="gryff">A golden potion that sparkles and pops </option>
+            <option value="raven">An iridescent blue potion that slowly pulsates with light </option>
+        </select>
+
+
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>You happen upn 4 artifacts, which do you chose?</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="gryff">A sword of valor </option>
+            <option value="huffl">A shield of truth</option>
+            <option value="raven">An orb of knowledge</option>
+            <option value="slyth">A chest of gold and gems</option>
+        </select>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>You meet a house elf in servitude. What do you do?</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="huffl">Befriend him</option>
+            <option value="gryff">Free him</option>
+            <option value="raven">Learn his magic</option>
+            <option value="slyth">Use him</option>
+        </select>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>You happen upon an injured person on the road. What do you do?</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="slyth">Steal from them</option>
+            <option value="huffl">Help them, stay with them, call a doctor</option>
+            <option value="gryff">Run after the person who hurt them</option>
+            <option value="raven">Figure out how to mend their wounds</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>An enchanted wall blocks your way. How do you overcome such an obstacle?
+            <select class="chosen-select" id="q8">
+                <option value=""></option>
+                <option value="raven">Look for clues and use your magic. The mind is the mightiest weapon</option>
+                <option value="huffl">Look for another way around</option>
+                <option value="slyth">Blow it up, nothing can withstand your force of will</option>
+                <option value="gryff">Call on your friends to help you</option>
+            </select>
+
+            <h3><strong>Question 9</strong></h3>
+            <h4>Someone casts an unfamiliar spell in your direction. How do you respond?</h4>
+            <select class="chosen-select" id="q9">
+                <option value=""></option>
+                <option value="gryff">Expelliarmus!</option>
+                <option value="raven">Stupefy!</option>
+                <option value="slyth">Crucio!</option>
+                <option value="huffl">Protego!</option>
+            </select>
+
+            <h3><strong>Question 10</strong></h3>
+            <h4>Which house would you chose to belong to?</h4>
+            <select class="chosen-select" id="q10">
+                <option value=""></option>
+                <option value="doubleSlyth">Slytherine</option>
+                <option value="doubleGryff">Gryffindor</option>
+                <option value="doubleHuffl">Hufflepuff</option>
+                <option value="doubleRaven">Ravenclaw</option>
+            </select>
+
+            <br>
+            <br>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                    aria-hidden="true"></i>
+                Submit</button>
+
+            <hr>
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Friends List</a> | <a
+                            href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img"
+                        src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg"
+                        alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Create the questions 
+        const questions = [
+            {
+                question: "You would rather sit home with a good book then go to an art gallery",
+                answers: ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"],
+                values: ["huffl", "huffl", "raven", "raven"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            },
+            {
+                question: "",
+                answers: ["","","",""],
+                values: ["huffl", "raven", "gryff", "slyth"]
+            }
+        ]
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            for (var x = 1; x < 11; x++) {
+                console.log("q" + [x] + ": " + )
+            }
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // AJAX post the data to the friends API.
+                $.post("/api/house", userData, function (data) {
+                    console.log(data);
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.matchName);
+                    $("#match-img").attr("src", data.matchImage);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+</body>
+
+</html>
